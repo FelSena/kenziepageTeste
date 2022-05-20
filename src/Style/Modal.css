@@ -1,0 +1,147 @@
+:root{
+    /*paleta primaria*/
+    --cor-principal:    #FF2253;
+    --cor-principal-50: #FFE9EE;
+    --cor-secundaria:   #0CA678;
+    --cor-secundaria-50: #E4F7EF;
+
+    /*paleta produtos*/
+    --cor-product-1: #EEF6FF;
+    --cor-product-2: #FFF7F4;
+    --cor-product-3: #FFF1F4;
+    --cor-product-4: #F3EEF5;
+
+    /*cores gray*/
+    --cor-gray-1: #F8F9FA;
+    --cor-gray-2: #E9ECEF;
+    --cor-gray-3: #868E96;
+    --cor-gray-4: #212529;
+
+    --cor-black: #000000;
+    --cor-white: #ffffff;
+}
+
+.container{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2500;
+}
+
+/*-------mostrar modal----------*/
+.container.mostrar{
+    display: flex;
+}
+/*-----------------------------*/
+
+.modal-cadastro{
+    background-color: white;
+    width: 15%;
+    padding: 10px;
+    min-width: 300px;
+    border: 4px solid var(--cor-gray-3);
+    border-radius: 10px;
+    position: relative;
+}
+.modal-cadastro h1{
+    font-family: 'Poppins';
+    margin-left: 8.7vw;
+    margin-bottom: 1vh;
+    margin: 0 40%;
+
+}
+.cadastro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+.cadastro input{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--cor-gray-3);
+}
+
+.fechar{
+    background-color: var(--cor-principal);
+    border: none;
+    padding: 5px;
+    border-radius: 12px;
+    cursor: pointer;
+    position: absolute;
+    top: -11px;
+    right: -9px;
+    width: 25px;
+    height: 25px;
+    color: white;
+}
+
+#form-cadastro{
+    background-color: var(--cor-principal);
+    color: var(--cor-gray-2);
+    border: none;
+    cursor: pointer;
+}
+
+/*---------Modal login-----------*/
+.container-login{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2500;
+}
+
+/*---------Mostrar-login-----------*/
+.container-login.mostrar{
+    display: flex;
+}
+/*--------------------------------*/
+
+.modal-login{
+    background-color: white;
+    width: 15%;
+    padding: 10px;
+    min-width: 300px;
+    border: 4px solid var(--cor-gray-3);
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+.modal-login h1{
+    font-family: 'Poppins';
+    margin-left: 9.8vw;
+    margin-bottom: 1vh;
+    margin: 0 40%;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+.login input{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--cor-gray-3);
+}
+#form-login{
+    background-color: var(--cor-principal);
+    color: var(--cor-gray-2);
+    border: none;
+    cursor: pointer;
+}

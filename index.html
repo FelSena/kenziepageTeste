@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/Style/reset.css">
+    <link rel="stylesheet" href="./src/Style/index.css">
+    <link rel="stylesheet" href="./src/Style/Modal.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fop3npj.css">
+    <title>Kenzie Food</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="logo logo-kenzie">Kenzie <small class="logo-food">food</small></h1>
+
+        <div id="divBuscar">
+            <input type="text" id="inputBusca" placeholder="Pesquisar por produto">
+            <button id="btnBuscar"> <img class="icon-pesquisar" src="./src/icons/procurar.png" alt=""></button>
+        </div>
+
+        <div class="fab">
+            <button class="main">Entrar</button>
+
+            <ul>
+              <li>
+                <label for="login">login</label>
+                <button id="login">Login</button>
+              </li>
+
+              <li>
+                <label for="Cadastro">Cadastro</label>
+                <button id="Cadastro">Cadastro</button>
+              </li>
+
+            </ul>
+          </div>
+
+    </header>
+
+    <main class="main">
+        <section class="store">
+        <nav class="listaNav">
+            <button class="estiloGeralBotoes estiloGeralBotoes--mostrarTodos ativo">Todos</button>
+            <button class="estiloGeralBotoes estiloGeralBotoes--panificadora"><img src="./src/icons/Panificadora.svg" alt="" id="panificadora">Panificadora</button>
+            <button class="estiloGeralBotoes estiloGeralBotoes--frutas"><img src="./src/icons/Frutas.svg" alt="" id="frutas">Frutas</button>
+            <button class="estiloGeralBotoes estiloGeralBotoes--bebidas"><img src="./src/icons/Bebidas.svg" alt="" id="bebidas">Bebidas</button>
+        </nav>
+            <ul class="listaCards">
+              
+                <!-- <li class="card">
+                    <img src="https://bit.ly/2So2zvB" alt="produto">
+                    <h2>nome do produto</h2>
+                    <p>Descrição do produto</p>
+                    <small>categoria</small>
+                    <span>R$20.00</span>
+                    <button><img src="./Src/icons/VectorCarrinho.svg" alt="icon"></button>
+                </li> -->
+
+
+            </ul>
+    
+        </section>
+
+        <section class="carrinhoLateral">
+            <div class="topo-carrinho">
+                <h2>Carrinho</h2>
+            </div>
+                <div id = 'carrinho'>
+                    <div id = 'carrinhoVazio'>
+                        <img src="./src/icons/emptyCart.svg" alt="bolsa de compra vazio">
+                        <h2 class="alerta">Ops!</h2>
+                        <span class='texto-carrinho'>Por enquanto não temos produtos no carrinho</span>
+                    </div>
+                    <ul class="ulCarrinho">
+                  
+                        <!-- <li class="liCarrinho">
+        
+                            <img src="https://bit.ly/2So2zvB" alt="produto">
+                            <h2>nome do produto</h2>
+                            <small>categoria</small>
+                            <p>R$20.00</p>
+                            <button id="btnLixo"><img src="./Src/icons/VectorLixo.svg" alt="lixo"></button>
+                        </li>
+                           -->
+                    </ul>
+                </div>
+                
+            
+            <div class="dadosProdutos">
+                <p>Quantidade <p id="quantidade">0</p></p>
+                <p >Total <p id="total">R$00,00</p></p>
+            </div>
+            
+    </section>
+    <!--Modal-cadastro-->
+
+    <div id="modal-cadastro" class="container ">
+        <div class="modal-cadastro">
+            <button id="fechar-cadastro" class="fechar">X</button>
+            <h1>Cadastro</h1>
+            <form class="cadastro">
+                <input type="text"  name = "name" placeholder="Nome">          
+                <input type="email" name="email"  placeholder="exemplo@gmail.com">                     
+                <input type="password" name="password"  placeholder="***********">
+                <input type="submit" value="Enviar" id="form-cadastro">                   
+            </form>
+        </div>
+    </div>
+
+    <!--modal-login-->
+
+    <div id="modal-login" class="container-login">
+        <div class="modal-login">
+            <button id="fechar-login" class="fechar">X</button>
+            <h1>login</h1>
+            <form class="login">
+                <input type="email" name="email" placeholder="exemplo@gmail.com">                      
+                <input type="password" name="password"  placeholder="***********">
+                <input type="submit" value="Enviar" id="form-login">                   
+            </form>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <p>Integrantes:</p>
+    </footer>
+
+  <script type="module" src="./src/script.js"></script>
+  <script type="module" src="./src/Controller/BarraPesquisa.js"></script>
+  <script src="./src/Controller/Entrar.js"></script>
+  <script type="module" src="./src/Controller/Login.js"></script>
+  <script src="./src/Controller/Modal.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

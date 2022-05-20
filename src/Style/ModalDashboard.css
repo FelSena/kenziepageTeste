@@ -1,0 +1,370 @@
+
+.modalRemover{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2500;
+}
+
+.modalRemover h2{
+font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: center;
+}
+
+.modal-delete{
+    width: 496px;
+    height: 250px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.modal-delete button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: #F8F9FA;
+    border: 1.5px solid #F8F9FA;
+    border-radius: 32px;
+    cursor: pointer;
+}
+.modal-delete div{
+    display: flex;
+
+}
+
+.mostrar{
+    display: flex;
+}
+
+.modalStatus{
+    display: none;
+    width: 100%;
+    height: 45vh;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.status {
+    width: 496px;
+    height: 130px;
+    border-radius: 9px;
+}
+.status-fixed {
+    background: #F8F9FA;
+    border-radius: 8px 8px 0px 0px;
+    padding: 0 12px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-fixed span{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.status-fixed button{
+    background: #E9ECEF;
+    border-radius: 4px;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+.status h2{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+.status-color{
+    height: 5px;
+    background: #39DF8F;
+    border-radius: 0px 0px 8px 8px;
+    
+}
+
+.status-errado{
+    background: #FF2253;
+}
+
+.mostra-status{
+    display: flex; /*MOSTRA O MODAL DE STATUS CERTO!*/
+}
+
+
+/*--------form produtos----------*/
+.modalAdd{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+.modalAdd form{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    width: 496px;
+    height: 755px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    display: flex;
+    position: absolute;
+  }
+  
+  .form--display--column{
+    display: flex;
+    flex-direction: column;
+    margin: 0 28px;
+  }
+  
+  .form--display--row{
+    display: flex;
+    margin: 0 28px;
+  }
+  
+  .form--display--row:first-child{
+    margin: 0;
+  }
+  
+  .form--title{
+    height: 70px;
+    background-color: #F8F9FA;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .form--title h3{
+    margin-left: 28px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .form--title button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 28px;
+    border: none;
+    background-color: #E9ECEF;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    color: #868E96;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  label{
+    font-size: 14px;
+    font-weight: 400;
+    color: #212529;
+    margin-bottom: 16px;
+  }
+  
+  .form--input{
+    width: 400px;
+    height: 52px;
+    background-color: #F8F9FA;
+    border: 1.5px solid #DEE2E6;
+    border-radius: 12px;
+    padding: 0 20px;
+  }
+  
+  .seletor{
+    width: 440px;
+    height: 52px;
+    background-color: #F8F9FA;
+    border: 1.5px solid #DEE2E6;
+    border-radius: 12px;
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .form--input::placeholder{
+    color: #868E96;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  textarea{
+    width: 400px;
+    height: 80px;
+    background-color: #F8F9FA;
+    border: 1.5px solid #DEE2E6;
+    border-radius: 12px;
+    resize: none;
+    padding: 10px 20px;
+  }
+  
+  textarea::placeholder{
+    font-family: 'Poppins', sans-serif;
+    color: #868E96;
+    font-size: 16px;
+    font-weight: 400;      
+  }
+  
+  .form--checkbox div{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form--checkbox div label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F9FA;
+    width: 136px;
+    height: 40px;
+    border-radius: 32px;
+    color: #868E96;
+    font-size: 14px;
+    font-weight: 500;
+    appearance: none;
+  }
+  
+  .form--checkbox div input{
+    appearance: none;
+  }
+  
+  .form--checkbox div #Panificadora::after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: 'Panificadora';
+    background-color: #F8F9FA;
+    width: 136px;
+    height: 40px;
+    border-radius: 32px;
+    color: #868E96;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .form--checkbox div #Frutas::after{
+    content: 'Frutas';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F9FA;
+    width: 136px;
+    height: 40px;
+    border-radius: 32px;
+    color: #868E96;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .form--checkbox div #Bebidas::after{
+    content: 'Bebidas';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F9FA;
+    width: 136px;
+    height: 40px;
+    border-radius: 32px;
+    color: #868E96;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .form--checkbox div #Panificadora:checked::after{
+    background-color: #FF2253;
+    color: white;
+  }
+  
+  .form--checkbox div #Frutas:checked::after{
+    background-color: #FF2253;
+    color: white;
+  }
+  
+  .form--checkbox div #Bebidas:checked::after{
+    background-color: #FF2253;
+    color: white;
+  }
+  
+  .form--button button{
+    margin-bottom: 37px;
+    width: 440px;
+    height: 52px;
+    background-color: #FF2253;
+    border: none;
+    border-radius: 32px;
+    color:white;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+.modal-cadastro{
+    display: flex;
+}
+
+.modalEditar{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+}
+.modalEditar form {
+  font-family: 'Poppins', sans-serif;
+    background-color: white;
+    width: 496px;
+    height: 755px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    display: flex;
+    position: absolute;
+}
+
+.modal-editar{
+  display: flex;
+}

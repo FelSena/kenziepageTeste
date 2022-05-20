@@ -1,0 +1,285 @@
+body{
+  height: 100vh;
+  font-family: 'Poppins'
+}
+button{
+  height: 40px;
+}
+#filtro button:hover{
+  border: 1.5px solid #212529;
+  border-radius: 30px;
+}
+#filtro button:nth-child(2){
+  background:  #fff7f4;
+}
+#filtro button:nth-child(3){
+  background: #ffe4ea;
+}
+#filtro button img{
+  margin-right: 15px;
+}
+#valoresVitrine{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.cardImage{
+  width: 294px;
+}
+label{
+  display:flex;
+}
+p{
+  height: 80px;
+  line-height: 20px;
+  height: 80px;
+  font-weight: 400;
+  color: #828282;
+}
+#searchBar{
+  padding: 25px;
+  height: 54.04px;
+  background: #F8F9FA;
+  border: 1.65434px solid #F8F9FA;
+  box-sizing: border-box;
+  border-radius: 33.0868px;
+  width: 100%;
+}
+#buttonSearch{
+  background: #FFE9EE;
+  height: 58.12px;
+  color: #FF2253;
+  width: 75.12px;
+  border: 1.65434px solid #F8F9FA;
+  box-sizing: border-box;
+  border-radius: 33.0868px;
+}
+#filtro{
+  display: flex;
+  margin-left: 25px;
+  margin-left: 25px;
+  overflow-x: scroll;
+  width: 100%;
+}
+#filtro::-webkit-scrollbar{
+  display: none;
+}
+#filtro button{
+  display:flex;
+  align-items: center;
+  margin-right: 10px;
+  color:#212529;
+  width: 150px;
+  padding: 5px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  justify-content: center;
+}
+#filtro button:nth-child(n+2){
+  padding: 10px;
+}
+#filtro button:nth-child(1){
+  margin-right: 15px;
+}
+#vitrine{
+  display:flex;
+  overflow-x: scroll;
+}
+#vitrine::-webkit-scrollbar{
+  display:none;
+}
+#card{
+  display: flex;
+  flex-direction: column;
+  background: #F8F9FA;
+  box-sizing: border-box;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+#vitrine>h2{
+  display:flex;
+  flex-direction: column;
+}
+#retangulo{
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 15px;
+  height: 59.85px;
+  background: #FF2253;
+  color: #ffffff;
+  border-radius: 14.9625px 14.9625px 0px 0px;
+}
+#retangulo span{
+  padding: 15px;
+  font-weight: 700;
+  line-height: 28px;
+  font-style: normal;
+  font-size: 17px;
+}
+#carrinho{
+  margin-left: 15px;
+  height: 530px;
+  background: #F8F9FA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+}
+#carrinhoVazio{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.alerta{
+  color:#868E96;
+  font-weight: 1000;
+  margin: 18px 0px;
+}
+.texto-carrinho{
+  color: #868E96;
+  margin: 0 15px;
+  text-align: center;
+}
+.cardC{
+  display: flex;
+  height: 70px;
+  width: 95%;
+  margin: 10px 17px;
+  justify-content: space-between;
+}
+.descricao{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 8px;
+}
+.h2{
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+.h3{
+  font-size: 10px;
+  color: #868E96;
+}
+.h4{
+  font-size: 12px;
+  color: #212529;
+}
+#carrinho{
+  overflow-y: scroll;
+}
+#todos{
+  background: #f8f9fa;
+  border: solid 1px #212529;
+}
+#panificadora{
+  border: none;
+}
+#frutas{
+  border: none;
+}
+#bebidas{
+  border: none;
+}
+figcaption{
+  font-size: 12px;
+  background-color: #FFE9EE;
+  width: 132.09px;
+  border-radius: 30px;
+  height: 30px;
+  text-align: center;
+  position: relative;
+  margin-top: -25px;
+  margin-left: 15px;
+}
+
+@media(min-width: 800px){
+  #logo{
+      position: absolute;
+      left: 5%;
+  }
+  #valorTotal{
+      display: flex;
+  }
+  label{
+      display:flex;
+      justify-content: flex-end;
+      width: 90%;
+      margin-top: 5px;
+  }
+  #qtd{
+      padding: 0;
+  }
+  #searchBar{
+      width: 311px;
+      height: 49px;
+
+  }
+  #vitrine{
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  #corpo-do-site{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+  #buttonSearch{
+      margin-top: 1.5px;
+      margin-left: -79px;
+      height: 49px;
+      cursor: pointer;
+  }
+
+  #carrinho-de-compras{
+      width: 350px;
+  }
+
+  figcaption{
+      border: solid #fff 1px;
+      border-radius: 10px;
+      background-color: #FFE9EE;
+      width: 132px;
+  }
+  figcaption:hover{
+      color: #fff;
+      background-color: #ff2253;
+  }
+  .cardImage:hover{
+      border: none;
+      border: 3px #ff2253 solid;
+  }
+  #todos{
+      height: 30px;
+      cursor: pointer;
+  }
+
+  #panificadora{
+      height: 30px;
+      border: none;
+      cursor: pointer;
+  }
+
+  #frutas{
+      height: 30px;
+      border: none;
+      cursor: pointer;
+  }
+
+  #bebidas{
+      height: 30px;
+      border: none;
+      cursor: pointer;
+  }
+}

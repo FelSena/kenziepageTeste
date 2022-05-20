@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:ital@1&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins:wght@500&display=swap');
+
+header{
+  height: 72px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 40px -20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 30px;
+}
+
+header > div > img {
+  width: 122px;
+  height: 33px;
+}
+.headerPesquisar{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.headerPesquisar > input {
+  font-family: 'Inter';
+  background-color: #E9ECEF;
+  height: 49px;
+  border: none;
+  border-radius: 12px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 312px;
+}
+.headerPesquisar > input::placeholder{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #868E96;
+  
+}
+.headerPesquisar > img {
+  height: 36px;
+  width: 36px;
+  border-radius: 128.57142639160156px;
+}
+.dropdown_avatar{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_avatar > img {
+  height: 36px;
+  width: 36px;
+  border-radius: 128.57142639160156px;
+}
+
+.dropdown_avatar a{
+  text-decoration: none;
+  color: #868E96;
+}
+
+.dropdown_avatar a:hover{
+  color: #212529;
+}
+
+.dropdown_avatar_content {
+  background-color: white;
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  right: 0;
+  gap: 5px;
+}
+.dropdown_avatar_content button{
+  margin-top: 20px;
+  border: none;
+  height: 48px;
+  width: 90%;
+  border-radius: 32px;
+  padding: 15px, 20px, 15px, 20px;
+  background: #F8F9FA;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #212529;
+  cursor: pointer;
+  text-align: center;
+}
+.dropdown_avatar_content button:hover{
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.dropdown_avatar_content a{
+  margin-top: 20px;
+  border: none;
+  height: 48px;
+  width: 90%;
+  border-radius: 32px;
+  padding: 15px, 20px, 15px, 20px;
+  background: #F8F9FA;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #212529;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown_avatar_content a:hover{
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown_avatar:hover .dropdown_avatar_content {
+  display: flex;
+  flex-direction: column; 
+}
+
+.produtos{
+  width: 1370px;
+  border-radius: 12px;
+  margin: auto;
+  max-height: 100vh;
+}
+.botoes{
+  Height: 62px;
+  display: flex;
+  justify-content: space-between;
+}
+.botoesFiltro{
+  display: inline-flex;
+  align-items: center;
+}
+.produtos__btnTodos{
+  border: none;
+  height: 48px;
+  width: 88px;
+  border-radius: 32px;
+  padding: 15px 20px 15px 20px;
+  margin-right: 15px;
+  background: #FF2253;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.produtos__btnTodos:hover{
+  background-color:#d40532; 
+}
+.produtos__btnTodos:focus{
+  background-color: #7c0a0a;
+}
+.produtos__btnPanificadora{
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 48px;
+  width: 170px;
+  border-radius: 32px;
+  padding: 15px 20px 15px 20px;
+  margin-right: 15px;
+  background: #FFF7F4;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #212529;
+    cursor: pointer;
+}
+.produtos__btnPanificadora > img{
+  height: 19px;
+  width: 19px;
+}
+.produtos__btnPanificadora:hover{
+  background-color: #f8c4b1;
+}
+.produtos__btnPanificadora:focus{
+  background-color: #ffa483;
+}
+.produtos__btnFrutas{
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 48px;
+  width: 123px;
+  border-radius: 32px;
+  padding: 15px 20px 15px 20px;
+  margin-right: 15px;
+  background: #FFF1F4;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  cursor: pointer;
+}
+.produtos__btnFrutas > img{
+  height: 19px;
+  width: 19px;
+}
+.produtos__btnFrutas:hover{
+  background-color: #f8b0c0;
+}
+.produtos__btnFrutas:focus{
+  background-color: #fc87a0;
+}
+.produtos__btnBebidas{
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 48px;
+  width: 136px;
+  border-radius: 32px;
+  padding: 15px 20px 15px 20px;
+  margin-right: 15px;
+  background: #F3EEF5;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  cursor: pointer;
+}
+.produtos__btnBebidas > img{
+  height: 19px;
+  width: 19px;
+}
+.produtos__btnBebidas:hover{
+  background-color: #e4a8fc;
+}
+.produtos__btnBebidas:focus{
+  background-color: #d36afd;
+}
+.produtos__btnAdicionarProduto{
+  border: none;
+  height: 48px;
+  width: 217px;
+  border-radius: 32px;
+  padding: 15px 20px 15px 20px;
+  background: #FF2253;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFF;
+  cursor: pointer;
+}
+.produtos__btnAdicionarProduto:hover{
+  background-color:#d40532; 
+}
+      
+.descritivo{
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left; 
+  color: #868E96;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+
+.tabelasProdutos{
+  width: 100%;
+  margin-top: 3%;
+}
+.tabelasProdutos li{
+  height: 62px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #E9ECEF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 1%;
+}
+.tabelasProdutos li img{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.tabelasProdutos li span{
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #868E96;
+  background: #F8F9FA;
+  border-radius: 8px;
+  height: 27px;
+  width: 93px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: flex-start;
+}
+
+.tabelasProdutos li p{
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+
+.produto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.produto h2{
+  margin-left: 15px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#editar{
+  height: 38px;
+  width: 38px;
+  background-color: #F8F9FA;
+  background-image: url(../icons/edit.svg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#deletar{
+  height: 38px;
+  width: 38px;
+  background-color: #F8F9FA;
+  background-image: url(../icons/trash.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}

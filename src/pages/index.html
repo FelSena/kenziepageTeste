@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Style/reset.css" />
+    <link rel="stylesheet" href="../Style/Dashboard.css">
+    <link rel="stylesheet" href="../Style/ModalDashboard.css">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <header>
+        <div>
+            <img src="../icons/Kenzie.svg" alt="logo KenzieFood">  
+            <img src="../icons/Food.svg" alt="logo KenzieFood">  
+        </div>
+        <div class="headerPesquisar">
+            <input type="text" name="pesquisa" id="pesquisa" placeholder=" Pesquise seu produto">
+            <div class="dropdown_avatar">
+                <img class="imgAvatar" src="../icons/Frame 1.svg" alt="avatar" id="avatar">
+                <div class="dropdown_avatar_content">
+                   <!--mudar de pagina e fazer logout(opcional:add home,dashboard)--> 
+                    <a href="../../index.html">Home</a>
+                    <!-- <a href="./dashboard.html">Dashboard</a> -->
+                    <button class="logout">Logout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="produtos">
+            <nav class="botoes">
+                <div class="botoesFiltro">
+                    <button class="produtos__btnTodos">Todos</button>
+                    <button class="produtos__btnPanificadora"><img src="../icons/Panificadora.svg " alt="">Panificadora</button>
+                    <button class="produtos__btnFrutas"><img src="../icons/Frutas.svg" alt=""> Frutas</button>
+                    <button class="produtos__btnBebidas"><img src="../icons/Bebidas.svg" alt=""> Bebidas</button>
+                </div>  
+                <div>
+                    <button id="addProduto" class="produtos__btnAdicionarProduto">Adicionar Produto</button>
+                </div>
+            </nav>
+            <div class="descritivo">
+                <span>Produto</span>
+                <span>Categorias</span>
+                <span>Descrição</span>
+                <span>Ações</span>
+            </div>
+            <div id="boxTabela" class="produtos__boxProdutos">
+                <ul class="tabelasProdutos">
+                    <!-- <li>
+                        <div class="produto">
+                            <img src="https://cdn.panelinha.com.br/receita/1565284969884-_JW_8684.jpg">
+                            <h2>Panqueca de banana com aveia </h2>
+                        </div>
+                        <span>Bebidas</span>
+                        <p>Esta receita serve muito bem 2 pessoas...</p>
+                        <div>
+                            <button id="editar" ></button>
+                            <button id="deletar" ></button>
+                        </div>
+                    </li> -->
+                    
+                </ul>
+                
+            </div>    
+        
+        </section>
+        <section class="modalRemover">
+            <div class="modal-delete">
+                <h2>Tem certeza que deseja deletar o item?</h2>
+                <div>
+                    <button class="sim" name="sim">Sim</button>
+                    <button class="nao" name="nao">Não</button>
+                </div>
+            </div>
+        </section>
+    <section class="modalStatus">
+        <div class="status">
+            <div class="status-fixed">
+                <span>Status</span>
+                <button id="fecha-modal-status">X</button>
+            </div>
+            <h2 id="mensagem-modal">Produto adicionado com sucesso!</h2>
+            <div class="status-color"></div>
+        </div>
+    </section>
+
+    <section class="modalAdd">
+        <form class="modal--open" action="">
+            <div class="form--display--row form--title">
+                  <h3>Cadastro de Produto</h3>
+                  <button id="closeModalAdd">X</button>
+            </div>
+            <div class="form--display--column">
+                  <label for="nome">Nome do Produto</label>
+                  <input class="form--input" type="text" name="nome" placeholder="Digitar o nome">
+            </div>      
+            <div class="form--display--column">
+                  <label for="produto">Descrição</label>
+                  <textarea class="form-input" name="descricao" id="" cols="" rows="" placeholder="Digitar a descrição"></textarea>
+            </div>
+  
+            
+            <div class="form--display--column form--checkbox">
+                  <label for="">Categorias</label>
+                  <select name="categoria" class="seletor">                  
+                        <option id="Panificadora" value="Panificadora" placeholder="Panificadora">Panificadora</option>
+                        <!-- <label for="Panificadora">Panificadora</label> -->
+  
+                        <option id="Frutas" value="Frutas">Frutas</option>
+                        <!-- <label for="Frutas">Frutas</label> -->
+  
+                        <option id="Bebidas" value="Bebidas">Bebidas</option>
+                        <!-- <label for="Bebidas">Bebidas</label> -->
+                  </select>
+            </div class="form--display">
+  
+            <div class="form--display--column">
+                  <label for="price">Valor do Produto</label>
+                  <input class="form--input" type="text" name="preco" placeholder="Digitar o valor aqui">
+            </div class="form--display">
+            
+            <div class="form--display--column">
+                  <label for="image">Link da imagem</label>
+                  <input class="form--input" type="text" name="imagem" placeholder="Inserir link">
+            </div>
+  
+            <div class="form--display--column form--button">
+                  <button>Cadastrar Produto</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="modalEditar">
+        <form class="modal--Editar" action="">
+            <div class="form--display--row form--title">
+                  <h3>Editar Produto</h3>
+                  <button id="modalEdit">X</button>
+            </div>
+            <div class="form--display--column">
+                  <label for="nome">Nome do Produto</label>
+                  <input class="form--input inputNome" type="text" name="nome" placeholder="Digitar o nome">
+            </div>      
+            <div class="form--display--column">
+                  <label for="produto">Descrição</label>
+                  <textarea class="form-input inputDescricao" name="descricao" id="" cols="" rows="" placeholder="Digitar a descrição"></textarea>
+            </div>
+  
+            
+            <div class="form--display--column form--checkbox">
+                  <label for="">Categorias</label>
+                  <select name="categoria" class="seletor seletorEdit">                  
+                        <option id="Panificadora" value="Panificadora" placeholder="Panificadora">Panificadora</option>
+                        <!-- <label for="Panificadora">Panificadora</label> -->
+  
+                        <option id="Frutas" value="Frutas">Frutas</option>
+                        <!-- <label for="Frutas">Frutas</label> -->
+  
+                        <option id="Bebidas" value="Bebidas">Bebidas</option>
+                        <!-- <label for="Bebidas">Bebidas</label> -->
+                  </select>
+            </div class="form--display">
+  
+            <div class="form--display--column">
+                  <label for="price">Valor do Produto</label>
+                  <input class="form--input inputPreco" type="text" name="preco" placeholder="Digitar o valor aqui">
+            </div class="form--display">
+            
+            <div class="form--display--column">
+                  <label for="image">Link da imagem</label>
+                  <input class="form--input inputLink" type="text" name="imagem" placeholder="Inserir link">
+            </div>
+  
+            <div class="form--display--column form--button">
+                  <button>Editar Produto</button>
+            </div>
+        </form>
+    </section>
+    </main>
+<script type='module' src="../Controller/Dashboard.js"></script>
+</body>
+</html>
